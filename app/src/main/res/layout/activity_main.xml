@@ -202,6 +202,7 @@
                 android:layout_marginBottom="12dp" />
 
             <TextView
+                android:id="@+id/operation_cafe"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:text="@string/operation_cafe"
@@ -209,9 +210,12 @@
                 android:background="@color/button_gray"
                 android:gravity="center|start"
                 android:padding="16dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <TextView
+                android:id="@+id/operation_transfer"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:text="@string/operation_transfer"
@@ -219,9 +223,12 @@
                 android:background="@color/button_gray"
                 android:gravity="center|start"
                 android:padding="16dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:focusable="true" />
 
             <TextView
+                android:id="@+id/operation_topup"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:text="@string/operation_topup"
@@ -229,7 +236,9 @@
                 android:background="@color/button_gray"
                 android:gravity="center|start"
                 android:padding="16dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
 
         </LinearLayout>
 

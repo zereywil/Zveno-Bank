@@ -1,42 +1,42 @@
 <resources>
     <string name="app_name">Zveno Bank</string>
 
-    <!-- Profile -->
+    <!-- Профиль -->
     <string name="user_name">Даниэль</string>
 
-    <!-- Bank -->
+    <!-- Банк -->
     <string name="bank_name">Zveno-Bank</string>
-    <string name="balance_amount">1 234 ₽</string>
+    <string name="balance_amount">75 420 ₽</string>
     <string name="card_number">••• 1234</string>
 
     <!-- Заголовки -->
     <string name="quick_actions">Быстрые действия</string>
     <string name="recent_operations">Последние операции</string>
 
-    <!-- buttons -->
+    <!-- Кнопки -->
     <string name="pay">Оплатить</string>
     <string name="transfer">Перевод</string>
     <string name="top_up">Пополнить</string>
     <string name="history">История</string>
 
-    <!-- Navigation -->
+    <!-- Навигация -->
     <string name="nav_home">Главная</string>
     <string name="nav_payments">Платежи</string>
     <string name="nav_city">Город</string>
     <string name="nav_chat">Чат</string>
     <string name="nav_shop">Витрина</string>
 
-    <!-- Test operations -->
+    <!-- Операции -->
     <string name="operation_cafe">Оплата кафе</string>
     <string name="operation_transfer">Перевод Даниэлю</string>
     <string name="operation_topup">Пополнение с карты</string>
 
-    <!-- Dates -->
-    <string name="date_1">10.01.2000</string>
-    <string name="date_2">10.02.2001</string>
-    <string name="date_3">10.03.2003</string>
+    <!-- Даты -->
+    <string name="date_1">12.05.2024</string>
+    <string name="date_2">10.05.2024</string>
+    <string name="date_3">08.05.2024</string>
 
-    <!-- Content Descriptions for Accessibility -->
+    <!-- Content Descriptions -->
     <string name="cd_profile_avatar">Аватар профиля</string>
     <string name="cd_referral">Реферальная программа</string>
     <string name="cd_home">Главная</string>

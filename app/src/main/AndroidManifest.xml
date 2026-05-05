@@ -10,16 +10,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ZvenoBank">
+        android:theme="@style/Theme.ZvenoBank"
+        tools:targetApi="31">
+
+        <!-- Главный экран -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Остальные экраны -->
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ReferralActivity" />
+        <activity android:name=".PaymentsActivity" />
+        <activity android:name=".TransferActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".CityActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".OperationDetailActivity" />
+
     </application>
 
 </manifest>
