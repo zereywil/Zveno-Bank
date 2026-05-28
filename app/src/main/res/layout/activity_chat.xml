@@ -42,4 +42,14 @@
         android:textSize="16sp"
         android:gravity="center"
         android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уведомления, реклама, чат с поддержкой"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
 </LinearLayout>

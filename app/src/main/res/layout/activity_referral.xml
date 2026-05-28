@@ -49,4 +49,13 @@
         android:gravity="center"
         android:layout_marginTop="100dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ваш код реферальной программы"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
 </LinearLayout>

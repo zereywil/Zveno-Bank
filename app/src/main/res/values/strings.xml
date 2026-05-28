@@ -44,4 +44,8 @@
     <string name="cd_city">Город</string>
     <string name="cd_chat">Чат</string>
     <string name="cd_shop">Витрина</string>
+
+    <string name="credit">Кредит</string>
+    <string name="savings">Накопления</string>
+    <string name="invest">Инвестиции</string>
 </resources>

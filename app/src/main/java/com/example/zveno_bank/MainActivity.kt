@@ -9,7 +9,6 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,6 +39,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Пополнение карты", Toast.LENGTH_SHORT).show()
         }
 
+        findViewById<Button>(R.id.btn_credit).setOnClickListener {
+            startActivity(Intent(this, CreditActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btn_savings).setOnClickListener {
+            startActivity(Intent(this, SavingsActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btn_invest).setOnClickListener {
+            startActivity(Intent(this, InvestActivity::class.java))
+        }
+
         findViewById<Button>(R.id.btn_more).setOnClickListener {
             startActivity(Intent(this, HistoryActivity::class.java))
         }
@@ -54,7 +65,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomNavigation() {
         val navHome = findViewById<LinearLayout>(R.id.nav_home)
         val navPayments = findViewById<LinearLayout>(R.id.nav_payments)
-        val navCity = findViewById<LinearLayout>(R.id.nav_city)
         val navChat = findViewById<LinearLayout>(R.id.nav_chat)
         val navShop = findViewById<LinearLayout>(R.id.nav_shop)
 
@@ -66,11 +76,6 @@ class MainActivity : AppCompatActivity() {
         navPayments.setOnClickListener {
             startActivity(Intent(this, PaymentsActivity::class.java))
             highlightNavItem(R.id.nav_payments)
-        }
-
-        navCity.setOnClickListener {
-            startActivity(Intent(this, CityActivity::class.java))
-            highlightNavItem(R.id.nav_city)
         }
 
         navChat.setOnClickListener {
@@ -86,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun highlightNavItem(activeId: Int) {
         val navItems = listOf(
-            R.id.nav_home, R.id.nav_payments, R.id.nav_city, R.id.nav_chat, R.id.nav_shop
+            R.id.nav_home, R.id.nav_payments, R.id.nav_chat, R.id.nav_shop
         )
 
         for (id in navItems) {
@@ -105,32 +110,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupLastOperationsClick() {
-        val operationCafe = findViewById<TextView>(R.id.operation_cafe)
-        val operationTransfer = findViewById<TextView>(R.id.operation_transfer)
-        val operationTopup = findViewById<TextView>(R.id.operation_topup)
-
-        operationCafe.setOnClickListener {
-            val intent = Intent(this, OperationDetailActivity::class.java)
-            intent.putExtra("operation", "Оплата кафе")
-            intent.putExtra("amount", "-850 ₽")
-            intent.putExtra("date", "12.05.2024")
-            startActivity(intent)
+        findViewById<TextView>(R.id.operation_cafe).setOnClickListener {
+            Toast.makeText(this, "Оплата кафе: 850 ₽", Toast.LENGTH_SHORT).show()
         }
 
-        operationTransfer.setOnClickListener {
-            val intent = Intent(this, OperationDetailActivity::class.java)
-            intent.putExtra("operation", "Перевод Даниэлю")
-            intent.putExtra("amount", "-5000 ₽")
-            intent.putExtra("date", "10.05.2024")
-            startActivity(intent)
+        findViewById<TextView>(R.id.operation_transfer).setOnClickListener {
+            Toast.makeText(this, "Перевод Даниэлю: 5000 ₽", Toast.LENGTH_SHORT).show()
         }
 
-        operationTopup.setOnClickListener {
-            val intent = Intent(this, OperationDetailActivity::class.java)
-            intent.putExtra("operation", "Пополнение с карты")
-            intent.putExtra("amount", "+10000 ₽")
-            intent.putExtra("date", "08.05.2024")
-            startActivity(intent)
+        findViewById<TextView>(R.id.operation_topup).setOnClickListener {
+            Toast.makeText(this, "Пополнение: 10000 ₽", Toast.LENGTH_SHORT).show()
         }
     }
 }

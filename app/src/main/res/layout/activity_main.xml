@@ -151,20 +151,12 @@
             </com.google.android.material.card.MaterialCardView>
 
             <!-- Быстрые действия -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/quick_actions"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="12dp" />
 
             <GridLayout
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:rowCount="2"
+                android:rowCount="4"
                 android:columnCount="2"
                 android:baselineAligned="false">
 
@@ -187,6 +179,22 @@
                     android:id="@+id/btn_more"
                     style="@style/ActionButtonStyle"
                     android:text="@string/history" />
+
+                <Button
+                    android:id="@+id/btn_credit"
+                    style="@style/ActionButtonStyle"
+                    android:text="Кредит"/>
+
+
+                <Button
+                    android:id="@+id/btn_invest"
+                    style="@style/ActionButtonStyle"
+                    android:text="Инвестиции"/>
+
+                <Button
+                    android:id="@+id/btn_savings"
+                    style="@style/ActionButtonStyle"
+                    android:text="Копить"/>
 
             </GridLayout>
 
@@ -239,6 +247,15 @@
                 android:layout_marginBottom="8dp"
                 android:clickable="true"
                 android:focusable="true"/>
+
+            <GridLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:baselineAligned="false">
+            </GridLayout>
 
         </LinearLayout>
 
@@ -311,34 +328,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/nav_payments"
-                    android:textSize="12sp"
-                    android:textColor="@color/nav_inactive"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-
-            <!-- Город -->
-            <LinearLayout
-                android:id="@+id/nav_city"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:background="?attr/selectableItemBackgroundBorderless">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@android:drawable/ic_menu_mylocation"
-                    app:tint="@color/nav_inactive"
-                    android:contentDescription="@string/cd_city" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nav_city"
                     android:textSize="12sp"
                     android:textColor="@color/nav_inactive"
                     android:layout_marginTop="4dp" />
